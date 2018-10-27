@@ -5,76 +5,102 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!--link to main stylesheet-->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<!--bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
-	<title>Instructions!</title>
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<title>Portfolio</title>
 </head>
 <body>
-	<div class="container-fluid" style="width:90%">
-		<div id="title">
-			<div class="row">
-					<div class="col-sm-8">
-						<h1>Signature Task Instructerinos</h1>
-					</div>
-					<div class="col-sm-4">
-						<h2>Welcome my dudes</h2>
-					</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="http://danielduyvo.github.io">Daniel Vo</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarStuff">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarStuff">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div>
+		<div class="bgimg-1">
+			<div class="caption">
+				<span class="border">~hello world!</span>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-5">
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">What's the task?</h5>
-						<p class="card-text">Your mission, if you choose to accept, is to design page for one of the actives or your p-bros. Save it as an html file and send it to me!</p>
-						<p class="card-text">Your page should have the following:</p>
-						<ul>
-							<li>The name of your chosen one</li>
-							<li>A picture of them</li>
-							<li>Say something nice! Maybe what they're like, give some praise, share a cute memory of them</li>
-							<li>A link to their Facebook</li>
-						</ul>
-						<p class="card-text">Good luck my dudes</p>
+		
+		<div style="color: #777;background-color:white;text-align:center;padding:25px 80px;text-align: justify;" id="about">
+			<h3 style="text-align:center;">About Me</h3>
+			<p>Hi! My name is Daniel Vo and I am a Computational and Systems Biology major at the University of California, Los Angeles. My hobbies include running, playing music and League of Legends.</p>
+			<hr>
+			<p>Coding has been a relatively new interest for me, having started learning HTML, CSS and JavaScript from freeCodeCamp.org at the beginning 2018. I came across coding in one of my life science classes which used Python for modeling population growth, and have since been exploring. I am currently taking an introductory course on C++ at UCLA to improve my fundamentals.</p>
+		</div>
+		
+		<div class="bgimg-2">
+			<div class="caption" id="portfolio">
+				<span class="border" style="font-size:25px;">portfolio</span>
+			</div>
+		</div>
+		
+		<div style="position:relative;">
+			<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+				<div class="row">
+					<div class="col">
+						<h3><a href="http://apo-x.org">apo-x.org</a></h3>
+						<p>As Administrative Vice President of Alpha Phi Omega - Chi Chapter, I worked together with my co-VP to redesign the website. Built on MySQL, WordPress and PHP, we updated the look of the landing page and added more functionality for members. We are also looking into upgrading the site to Node.js, Express and Vue for better performance.</p>
 					</div>
-					<div class="card-body">
-						<h5 class="card-title">How do I do the do</h5>
-						<p class="card-text">All you really need is a text-editor, Notepad on Windows, TextEdit on Mac. From here, you'll type up the HTML and design the page from there. At the very end, I'll host all the pages (or I'll try to) for y'all to see.</p>
+					<div class="col">
+						<h3><a href="https://github.com/danielduyvo/twitter-bot">Chuck Norris Twitter Bot</a></h3>
+						<p>When I first started coding, to learn more about Node.js and RESTful APIs, I made a quick Twitter bot that tweeted random Chuck Norris jokes every few hours. It uses the twit package to make API requests and ICDBn.com for the jokes.</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7">
-				<div class="card">
-					<div class="card-body">
-						<img src="webdesign.png" alt="web design is my passion" class="card-img-top">
-						<p class="card-text"><3</p>
+		</div>
+		
+		<div class="bgimg-3">
+			<div class="caption">
+				<span class="border" style="font-size:25px;" id="contact">contact</span>
+			</div>
+		</div>
+		
+		<div style="position:relative;">
+			<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+				<div class="row" style="text-align:center;">
+					<div class="col">
+						<a href="http://github.com/danielduyvo"><i class="fab fa-github fa-10x"></i></a>
+					</div>
+					<div class="col">
+						<a href="https://www.linkedin.com/in/daniel-vo-b2989468/"><i class="fab fa-linkedin fa-10x"></i></a>
+					</div>
+					<div class="col">
+						<a href="https://www.facebook.com/imallgummedupinside"><i class="fab fa-facebook-square fa-10x"></i></a>
+					</div>
+					<div class="col">
+						<a href="https://twitter.com/DanielVo10"><i class="fab fa-twitter fa-10x"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="card card-body">
-			<h3>So what do I do?</h3>
-			<p>Alright, so if you have no idea with what to do, here's how you start. First thing you have to do is pull up your text editor; I'm using Notepad here. Start your document with &lt!DOCTYPE&#160;html&gt, which will tell the browser what version of HTML you are writing in. After that follow it with &lthtml&gt and &lt/html&gt</p>
-			<img src="jordan1.png" class="img-fluid">
-			<p>In html, these short combinations letters within the arrows are called tags. They generally come in pairs, defining a certain body of code within it. The first tag opens the container for the code, and the second one closes it. The second tag will have a backslash (/) in front of the letters to indicate it is closing. In this case, the tags &lthtml&gt and &lt/html&gt will contain code that will be interpreted as html (surprise). To start making the body of the page, add the tags &ltbody&gt and &lt/body&gt within the body of the html tags.</p>
-			<img src="jordan2.png" class="img-fluid">
-			<p>So far, we haven't actually made anything show up on the page. Let's start with the title of the page. The tag for headings in html are &lth1&gt (and closed with &lth1&gt), where you can change the number to make the font size smaller. Say you want to write the name of your pbro (say it's Jordan Shen). Simply write his name in between the tags. Put this title within your body tags.</p>
-			<img src="jordan3.png" class="img-fluid">
-			<p>Let's write something about our favorite pbro. This time, we'll use the tag &ltp&gt (closed with &lt/p&gt, p stands for paragraph). Write whatever you want in between the lines.</p>
-			<img src="jordan4.png" class="img-fluid">
-			<p>Now, let's put in a picture of Jordan. This is a little different, because images don't need a closing tag; the &ltimg&gt tag stands alone. Instead of putting information on the element in between two tags, we're going to put the information inside the brackets. Specifically, we're going to write the source url as an attribute in the angle brackets of the tag. Write src and set it equal to your image's url in quotes. You can find some picture on Facebook or Instagram, right-click it and copy the image URL to here</p>
-			<img src="jordan5.png" class="img-fluid">
-			<img src="jordan6.png" class="img-fluid">
-			<p>Last step, putting in the link to his facebook. The tag for links are &lta&gt (and closed with &lt/a&gt). We will use another attribute (so placing something within the brackets of the first tag) to define where we are linking to. To do that, we set href equal to the link we want to go to (href="facebook.com/url"), all in the &lta&gt tag. But now we need text to click. On the inside of the two tags, we'll write "click me" or something.</p>
-			<img src="jordan7.png" class="img-fluid">
-			<p>Finally, save the file as PersonsName.html</p>
-			<p>Send it to me on Facebook, and I'll sign your signature task sheet~</p>
-			<p>Good luck!</p>
-			<p><a href="jordan.html">Jordan Shen</a></p>
+		<div class="bgimg-1">
+			<div class="caption">
+				<span class="border">~hope to hear from you!</span>
+			</div>
 		</div>
 	</div>
 </body>
